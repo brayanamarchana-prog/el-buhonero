@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- Indica al navegador que este documento usa HTML5 -->
+
+<html lang="es">
+<!-- Comienza el documento HTML y define el idioma como español -->
+
+<head>
+    <!-- Cabecera del documento (NO se ve en la página) -->
+
+    <meta charset="UTF-8">
+    <!-- Permite usar acentos, ñ y caracteres especiales -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la web sea responsive (se adapte a móviles) -->
+
+    <title>El Buhonero</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Conecta este HTML con tu archivo CSS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Importa la fuente Montserrat desde Google Fonts -->
+
+</head>
+
+<body>
+<!-- Todo lo que está dentro del body ES lo que se ve en la web -->
+
+    <header class="site-header">
+    <!-- Encabezado principal de la página -->
+
+        <nav class="navbar">
+        <!-- Barra de navegación -->
+
+            <div class="logo">EL BUHONERO</div>
+            <!-- Logo o nombre del sitio -->
+
+            <ul class="nav-links">
+            <!-- Lista de enlaces del menú -->
+
+                <li><a href="#componentes">COMPONENTES</a></li>
+                <li><a href="#emuladores">EMULADORES</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Contenido principal de la página -->
+
+        <section id="hero">
+        <!-- Sección principal (pantalla grande de bienvenida) -->
+
+            <h1>BIENVENIDO</h1>
+            <!-- Título principal -->
+
+            <p>ISOS, ROMS, BIOS</p>
+            <!-- Texto descriptivo -->
+
+            <form action="./VER/index.html" class="search-box">
+                <input 
+                     type="text" 
+                     placeholder="Explorar..."
+                     aria-label="Explorar contenido"
+             >
+             <button type="submit">🔍</button>
+            </form>
+
+
+        </section>
+
+        <section id="Catalogo">
+        <!-- Sección del catálogo de consolas -->
+
+            <h2>Consolas Retro</h2>
+            <!-- Título de la sección -->
+
+            <div class="Catalogo-grid">
+            <!-- Contenedor que usa GRID para ordenar las tarjetas -->
+
+                <article class="Catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/Peliculas.gif" alt="Pelciulas">
+                        <div class="card-overlay">
+                            <p>Los mejores films de todos los tiempos</p>
+                        </div>
+                    </div>
+                    <h3>Peliculas</h3>
+                    <a href="./peliculas/index.html" class="card-button">
+                        Ver Peliculas
+                    </a>   
+                </article>
+
+                <!-- Cada article siguiente es OTRA tarjeta -->
+
+                <article class="Catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/PlayStation 1.gif" alt="Pelciulas">
+                        <div class="card-overlay">
+                            <p>Una de las maquinas mas clasicas de las historia</p>
+                        </div>
+                    </div>
+                    <h3>PlayStation 1</h3>
+                    <a href="./ps1/index.html" class="card-button">
+                        Ver ROMs
+                    </a>   
+                </article>
+
+                <article class="Catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/PlayStation 2.gif" alt="Pelciulas">
+                        <div class="card-overlay">
+                            <p>La consola que revoluciono la industria de los videojuegos</p>
+                        </div>
+                    </div>
+                    <h3>PlayStation 2</h3>
+                    <a href="./ps2/index.html" class="card-button">
+                        Ver ROMs
+                    </a>   
+                </article>
+
+
+                <article class="Catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/PlayStationPortable.gif" alt="PSP">
+                        <div class="card-overlay">
+                            <p>Tiempos aquellos donde teniamos el poder en la palma de la mano</p>
+                        </div>
+                    </div>
+                    <h3>PlayStation Portable</h3>
+                    <a href="./psp/index.html" class="card-button">
+                        Ver ROMs
+                    </a>   
+                </article>
+
+
+                <article class="Catalogo-card">
+
+                    <div class="card-image">
+                        <img src="imagenes/NintendoNES.gif" alt="NES">
+
+                           <!-- Overlay que aparece al pasar el mouse -->
+                        <div class="card-overlay">
+                            <p>Clásicos de 8 bits que marcaron historia</p>
+                        </div>
+                    </div>
+
+                        <!-- Título SOLO texto -->
+                    <h3>Nintendo NES</h3>
+
+                        <!-- BOTÓN que SÍ navega -->
+                    <a href="./nes/index.html" class="card-button">
+                       Ver ROMs
+                    </a>
+
+                </article>
+
+
+                <article class="Catalogo-card">
+                    <div class="card-image">
+                        <img src="imagenes/SuperNintendo.gif" alt="Pelciulas">
+                        <div class="card-overlay">
+                            <p>La Super nintendo la consola que nos ofrecio horas y horas de diversion</p>
+                        </div>
+                    </div>
+                    <h3>Super Nintendo</h3>
+                    <a href="./snes/index.html" class="card-button">
+                        Ver ROMs
+                    </a>   
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+    <!-- Pie de página -->
+
+        <p>&copy; El Buhonero derechos reservados.</p>
+        <!-- Texto legal -->
+
+    </footer>
+
+</body>
+</html>
